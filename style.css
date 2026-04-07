@@ -1,25 +1,181 @@
-div{
+/* Configurações Globais (Tira o estilo "cru" do navegador) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização do Menu de Navegação */
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    background-color: orange;
+    color: green; /* Mantido o seu hover verde e laranja! */
+}
+
+/* Configuração do Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    flex-direction: column;
+    min-width: 150px;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Container Principal (A "folha" branca central) */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* Organização de Divs e Textos */
+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
-.final{
-    display: flex;
+/* Estilo das Imagens que você enviou */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 15px 0;
+}
+
+/* Cards (Para a parte de Mercado e Salário) */
+.cards-container {
     flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.final *{
-    margin: 10px;
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 48%;
 }
 
-footer a{
-    float: right;
-    margin: 10px;
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
-a:hover{
+.btn:hover {
     background-color: orange;
     color: green;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.final {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.topo {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 0.9em;
+    opacity: 0.8;
 }
