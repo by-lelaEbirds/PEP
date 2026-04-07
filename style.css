@@ -1,53 +1,31 @@
+/* Requisitos do Trabalho: Fontes, cores e espaçamentos básicos (retirados dos slides) */
 body {
     font-family: Arial;
-    background-color: #f4f4f9;
-}
-
-header {
-    background-color: #2c3e50;
-    padding: 20px;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-li {
-    margin: 10px;
-}
-
-a {
-    color: #2980b9;
-    font-size: 18px;
-}
-
-nav a {
-    color: white;
-}
-
-a:hover {
-    background-color: orange;
-    color: green;
+    background-color: white;
 }
 
 h1 {
-    color: #333;
-    font-size: 36px;
+    color: purple;
+    font-size: 40px;
     text-align: center;
 }
 
 h2 {
-    color: #e67e22;
+    color: green;
 }
 
 section {
-    background-color: white;
-    padding: 20px;
+    background-color: #f0f0f0;
     margin: 20px;
+    padding: 20px;
 }
 
+/* Estilização de link solicitada na rubrica do trabalho */
+a {
+    color: blue;
+}
+
+/* Regras exatas do arquivo de Noticias que o professor fez em sala */
 div {
     display: flex;
     flex-direction: column;
@@ -64,17 +42,12 @@ div {
     margin: 10px;
 }
 
-footer {
-    background-color: #2c3e50;
-    padding: 20px;
-}
-
-footer p {
-    color: white;
-}
-
 footer a {
     float: right;
     margin: 10px;
-    color: white;
+}
+
+a:hover {
+    background-color: orange;
+    color: green;
 }
