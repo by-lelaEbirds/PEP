@@ -1,0 +1,25 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+}
+
+.final *{
+    margin: 10px;
+}
+
+footer a{
+    float: right;
+    margin: 10px;
+}
+
+a:hover{
+    background-color: orange;
+    color: green;
+}
