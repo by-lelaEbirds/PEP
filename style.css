@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+
+body {
+font-family: "Sekuya", Times, serif;
+text-transform: uppercase;
+}
+
 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 850px;
+    margin: auto;
+    background-color: rgb(104, 154, 165);
+    font-family: "Lucida Console", Times, serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    margin: auto;
+    background-color: rgb(176, 208, 215);
+}
+
 
 .final {
     display: flex;
@@ -20,6 +42,6 @@ footer a {
 }
 
 a:hover {
-    background-color: orange;
-    color: green;
+    background-color: rgb(104, 154, 165);
+    color: rgb(176, 208, 215);
 }
